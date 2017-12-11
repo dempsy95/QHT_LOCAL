@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tVf-jA-SVr">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ChalkboardSE.ttc">
+            <string>ChalkboardSE-Bold</string>
+            <string>ChalkboardSE-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="bGk-el-YUs">
+            <objects>
+                <navigationController id="tVf-jA-SVr" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A93-oQ-BXn">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Qmc-zn-uww" kind="relationship" relationship="rootViewController" id="Rnv-Hf-e1D"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eep-8V-pFf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-686" y="-2"/>
+        </scene>
+        <!--Initial View Controller-->
+        <scene sceneID="jUV-jj-RjG">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qmc-zn-uww" customClass="InitialViewController" customModule="HoSug" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ANQ-WU-VMz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HoTell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sma-NR-mmV">
+                                <rect key="frame" x="53" y="122" width="227" height="106"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="A Hotel Reservation App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKc-tP-iIO">
+                                <rect key="frame" x="126" y="236" width="208" height="21"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Choose Your City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfa-Vs-Wyp">
+                                <rect key="frame" x="16" y="357" width="133" height="21"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O9c-Jz-a2h">
+                                <rect key="frame" x="0.0" y="386" width="375" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="aPf-Za-B4w"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a48-MM-oQi">
+                                <rect key="frame" x="147" y="540" width="80" height="37"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="0.53651806192660545" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="fvK-85-RLL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonFired:" destination="Qmc-zn-uww" eventType="touchUpInside" id="x8C-3A-k3V"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="a48-MM-oQi" firstAttribute="centerX" secondItem="dYw-s8-orO" secondAttribute="centerX" id="3gw-lb-63D"/>
+                            <constraint firstItem="qfa-Vs-Wyp" firstAttribute="leading" secondItem="dYw-s8-orO" secondAttribute="leading" constant="20" id="ODr-rG-mgC"/>
+                            <constraint firstItem="O9c-Jz-a2h" firstAttribute="centerX" secondItem="dYw-s8-orO" secondAttribute="centerX" id="OTe-yx-9OB"/>
+                            <constraint firstItem="Sma-NR-mmV" firstAttribute="top" secondItem="dYw-s8-orO" secondAttribute="top" constant="80" id="Qhu-WW-b0j"/>
+                            <constraint firstItem="a48-MM-oQi" firstAttribute="top" secondItem="O9c-Jz-a2h" secondAttribute="bottom" constant="20" id="XSJ-bN-5hX"/>
+                            <constraint firstItem="NKc-tP-iIO" firstAttribute="top" secondItem="Sma-NR-mmV" secondAttribute="bottom" constant="15" id="f6c-pR-AzV"/>
+                            <constraint firstItem="O9c-Jz-a2h" firstAttribute="top" secondItem="qfa-Vs-Wyp" secondAttribute="bottom" id="haQ-qr-O7G"/>
+                            <constraint firstItem="dYw-s8-orO" firstAttribute="trailing" secondItem="NKc-tP-iIO" secondAttribute="trailing" constant="60" id="nQn-D4-Rkp"/>
+                            <constraint firstItem="Sma-NR-mmV" firstAttribute="leading" secondItem="dYw-s8-orO" secondAttribute="leading" constant="60" id="pZA-tb-2wX"/>
+                            <constraint firstItem="qfa-Vs-Wyp" firstAttribute="top" secondItem="NKc-tP-iIO" secondAttribute="bottom" constant="140" id="v5m-e3-wQ4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dYw-s8-orO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jdJ-JH-75f"/>
+                    <connections>
+                        <outlet property="button" destination="a48-MM-oQi" id="yas-dY-Rjw"/>
+                        <outlet property="picker" destination="O9c-Jz-a2h" id="60G-RL-Jec"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="whO-xA-xEF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22" y="6"/>
+        </scene>
+        <!--City-->
+        <scene sceneID="Glx-cu-6cD">
+            <objects>
+                <viewController storyboardIdentifier="City" title="City" id="rIT-3H-z34" customClass="CityViewController" customModule="HoSug" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vnR-zW-gQt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="2" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wgD-Yp-YmE">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="city" textLabel="aD2-CR-4WF" detailTextLabel="fVP-iV-3z2" rowHeight="61" style="IBUITableViewCellStyleSubtitle" id="WHW-ok-sA5">
+                                        <rect key="frame" x="0.0" y="2" width="375" height="61"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WHW-ok-sA5" id="Zhf-Bh-OUW">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="60.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aD2-CR-4WF">
+                                                    <rect key="frame" x="15" y="10" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fVP-iV-3z2">
+                                                    <rect key="frame" x="15" y="33.5" width="33" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wgD-Yp-YmE" firstAttribute="top" secondItem="RPc-WH-Hy5" secondAttribute="top" id="6si-ZI-upG"/>
+                            <constraint firstItem="RPc-WH-Hy5" firstAttribute="trailing" secondItem="wgD-Yp-YmE" secondAttribute="trailing" id="FtR-iA-AxB"/>
+                            <constraint firstItem="wgD-Yp-YmE" firstAttribute="leading" secondItem="RPc-WH-Hy5" secondAttribute="leading" id="Ir1-Ta-7mV"/>
+                            <constraint firstItem="RPc-WH-Hy5" firstAttribute="bottom" secondItem="wgD-Yp-YmE" secondAttribute="bottom" id="eLV-dk-9EQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RPc-WH-Hy5"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityTableView" destination="wgD-Yp-YmE" id="dqh-9x-DlP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rlG-II-VUR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="701.60000000000002" y="5.8470764617691158"/>
+        </scene>
+        <!--Hotel-->
+        <scene sceneID="W4g-Bj-etW">
+            <objects>
+                <viewController storyboardIdentifier="Hotel" title="Hotel" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CXE-1o-b1E" customClass="HotelViewController" customModule="HoSug" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kfQ-en-M7A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hotel" translatesAutoresizingMaskIntoConstraints="NO" id="o1V-tj-6xl">
+                                <rect key="frame" x="0.0" y="20" width="375" height="249"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="249" id="cUZ-iQ-Kyg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The Westin Nashville" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POH-Ei-gvg">
+                                <rect key="frame" x="16" y="300" width="257" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="807 Clark Pl, Nashville, TN 37203" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37F-tS-UFV">
+                                <rect key="frame" x="102" y="329" width="257" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.0/5.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JR-RD-Fes">
+                                <rect key="frame" x="305" y="325" width="50" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Only 5 Rooms Left!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxU-E7-XTX">
+                                <rect key="frame" x="29" y="451.5" width="174.5" height="29"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gx-hJ-Pba">
+                                <rect key="frame" x="220" y="495" width="95" height="42"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="0.53651806189999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="DQO-Nn-Rv6"/>
+                                    <constraint firstAttribute="width" constant="95" id="PqQ-Y8-DxM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                <state key="normal" title="Reserve!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="CXE-1o-b1E" eventType="touchUpInside" id="SG3-oZ-jv6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="o1V-tj-6xl" firstAttribute="top" secondItem="LPj-4x-ya1" secondAttribute="top" id="0xr-O4-ENn"/>
+                            <constraint firstItem="LPj-4x-ya1" firstAttribute="trailing" secondItem="1Gx-hJ-Pba" secondAttribute="trailing" constant="60" id="7Rm-K3-6X5"/>
+                            <constraint firstItem="37F-tS-UFV" firstAttribute="leading" secondItem="POH-Ei-gvg" secondAttribute="trailing" constant="-171" id="97e-hp-wYA"/>
+                            <constraint firstItem="LPj-4x-ya1" firstAttribute="trailing" secondItem="o1V-tj-6xl" secondAttribute="trailing" id="HM9-cq-ZOO"/>
+                            <constraint firstItem="POH-Ei-gvg" firstAttribute="centerY" secondItem="0JR-RD-Fes" secondAttribute="centerY" id="Iso-HT-si2"/>
+                            <constraint firstItem="37F-tS-UFV" firstAttribute="top" secondItem="POH-Ei-gvg" secondAttribute="bottom" constant="15" id="TaX-De-Gn2"/>
+                            <constraint firstItem="o1V-tj-6xl" firstAttribute="leading" secondItem="LPj-4x-ya1" secondAttribute="leading" id="VJ1-h2-nR1"/>
+                            <constraint firstItem="POH-Ei-gvg" firstAttribute="top" secondItem="o1V-tj-6xl" secondAttribute="bottom" constant="50" id="VyY-Io-tx8"/>
+                            <constraint firstItem="1Gx-hJ-Pba" firstAttribute="top" secondItem="yxU-E7-XTX" secondAttribute="bottom" constant="15" id="ZyZ-A4-ViL"/>
+                            <constraint firstItem="LPj-4x-ya1" firstAttribute="trailing" secondItem="0JR-RD-Fes" secondAttribute="trailing" constant="20" id="nLa-1T-TWx"/>
+                            <constraint firstItem="LPj-4x-ya1" firstAttribute="bottom" secondItem="1Gx-hJ-Pba" secondAttribute="bottom" constant="130" id="pPa-G8-RH6"/>
+                            <constraint firstItem="yxU-E7-XTX" firstAttribute="leading" secondItem="LPj-4x-ya1" secondAttribute="leading" constant="29" id="uFI-W2-0te"/>
+                            <constraint firstItem="POH-Ei-gvg" firstAttribute="leading" secondItem="LPj-4x-ya1" secondAttribute="leading" constant="16" id="v2w-6h-jov"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LPj-4x-ya1"/>
+                    </view>
+                    <connections>
+                        <outlet property="address" destination="37F-tS-UFV" id="hXd-LV-Mlb"/>
+                        <outlet property="availability" destination="yxU-E7-XTX" id="h5V-3b-3oB"/>
+                        <outlet property="button" destination="1Gx-hJ-Pba" id="zK6-6M-uV3"/>
+                        <outlet property="name" destination="POH-Ei-gvg" id="qQL-xj-JL9"/>
+                        <outlet property="rating" destination="0JR-RD-Fes" id="tg3-gZ-a7q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BVv-h6-bzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1437.5999999999999" y="-54.422788605697157"/>
+        </scene>
+        <!--Reserve-->
+        <scene sceneID="MzB-eB-ryy">
+            <objects>
+                <viewController storyboardIdentifier="Reserve" title="Reserve" id="nyP-R3-fVJ" customClass="ReservationViewController" customModule="HoSug" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iF9-jg-LAV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="You're In!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJO-KH-Yj7">
+                                <rect key="frame" x="57" y="195" width="260" height="131"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="RJd-uU-9qL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuo-SG-UIp">
+                                <rect key="frame" x="155" y="425" width="187" height="64"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="0.53651806189999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="bvn-QR-jGe"/>
+                                    <constraint firstAttribute="width" constant="187" id="zaE-By-q0g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
+                                <state key="normal" title="Check Out!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="CXE-1o-b1E" eventType="touchUpInside" id="HkZ-9G-Xm9"/>
+                                    <action selector="buttonClicked:" destination="nyP-R3-fVJ" eventType="touchUpInside" id="lJw-Jz-bmN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eJO-KH-Yj7" firstAttribute="top" secondItem="Zbh-Yh-4X9" secondAttribute="top" constant="250" id="2eP-rR-1G7"/>
+                            <constraint firstItem="xuo-SG-UIp" firstAttribute="top" secondItem="eJO-KH-Yj7" secondAttribute="bottom" constant="70" id="HcW-wA-hOH"/>
+                            <constraint firstItem="Zbh-Yh-4X9" firstAttribute="trailing" secondItem="xuo-SG-UIp" secondAttribute="trailing" constant="33" id="Kq8-ih-fab"/>
+                            <constraint firstItem="eJO-KH-Yj7" firstAttribute="centerX" secondItem="Zbh-Yh-4X9" secondAttribute="centerX" id="aE5-Yn-FNn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zbh-Yh-4X9"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="xuo-SG-UIp" id="jWi-Cv-dkh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pbm-vA-Db9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2152.8000000000002" y="-54.422788605697157"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hotel" width="800" height="530"/>
+    </resources>
+</document>
