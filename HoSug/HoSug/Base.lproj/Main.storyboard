@@ -220,7 +220,7 @@
                         <constraints>
                             <constraint firstItem="o1V-tj-6xl" firstAttribute="top" secondItem="LPj-4x-ya1" secondAttribute="top" id="0xr-O4-ENn"/>
                             <constraint firstItem="LPj-4x-ya1" firstAttribute="trailing" secondItem="1Gx-hJ-Pba" secondAttribute="trailing" constant="60" id="7Rm-K3-6X5"/>
-                            <constraint firstItem="37F-tS-UFV" firstAttribute="leading" secondItem="POH-Ei-gvg" secondAttribute="trailing" constant="-171" id="97e-hp-wYA"/>
+                            <constraint firstItem="37F-tS-UFV" firstAttribute="leading" secondItem="LPj-4x-ya1" secondAttribute="leading" constant="80" id="Dqa-KL-qc1"/>
                             <constraint firstItem="LPj-4x-ya1" firstAttribute="trailing" secondItem="o1V-tj-6xl" secondAttribute="trailing" id="HM9-cq-ZOO"/>
                             <constraint firstItem="POH-Ei-gvg" firstAttribute="centerY" secondItem="0JR-RD-Fes" secondAttribute="centerY" id="Iso-HT-si2"/>
                             <constraint firstItem="37F-tS-UFV" firstAttribute="top" secondItem="POH-Ei-gvg" secondAttribute="bottom" constant="15" id="TaX-De-Gn2"/>

@@ -23,21 +23,21 @@ class ReservationViewController: UIViewController {
     }
 
     @IBAction func buttonClicked(_ sender: UIButton) {
-//        let params: [String:String] = ["id":hotelId!]
-//        Alamofire.request(
-//            URL(string: "http://ec2-18-216-85-1.us-east-2.compute.amazonaws.com:3000/checkout")!,
-//            method: .post,
-//            parameters: params)
-//            .validate()
-//            .responseJSON {response in
-//                let result = response.result.value
-//                var json = JSON(result!)
-//                if(result != nil){
-//                    if(json["content"] == "success"){
+        let params: [String:String] = ["hotel_id":hotelId!]
+        Alamofire.request(
+            URL(string: "http://ec2-18-216-85-1.us-east-2.compute.amazonaws.com:3000/checkout")!,
+            method: .post,
+            parameters: params)
+            .validate()
+            .responseJSON {response in
+                let result = response.result.value
+                var json = JSON(result!)
+                if(result != nil){
+                    if(json["content"] == "success"){
                         self.dismiss(animated: true, completion: nil)
-//                    }
-//                }
-//        }
+                    }
+                }
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {

@@ -30,43 +30,43 @@ class CityViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        let params: [String:String] = ["city":city!]
-//        Alamofire.request(
-//            URL(string: "http://ec2-18-216-85-1.us-east-2.compute.amazonaws.com:3000/city")!,
-//            method: .post,
-//            parameters: params)
-//            .validate()
-//            .responseJSON {response in
-//                let result = response.result.value
-//                var json = JSON(result!)
-//                if(result != nil){
-//                    if(json["content"] != "fail"){
-//                        self.search_result.removeAll()
-//                        for item in json["content"].array! {
-//                            var temp = [String:String]()
-//                            temp["name"] = item["name"].string!
-//                            temp["id"] = item["id"].string!
-//                            if(item["address"] == JSON.null){
-//                                temp["address"] = "no address for this hotel"
-//                            }
-//                            else{
-//                                temp["address"] = item["address"].string!
-//                            }
-//                            self.search_result.append(temp)
-//                        }
-//                        self.cityTableView.reloadData()
-//                    }
-//                }
-//        }
+//        let params: [String:String] = ["hotel_city":city!]
+        Alamofire.request(
+            URL(string: "http://ec2-18-216-85-1.us-east-2.compute.amazonaws.com:3000/cities")!,
+            method: .post,
+            parameters: ["hotel_city":city!])
+            .validate()
+            .responseJSON {response in
+                let result = response.result.value
+                var json = JSON(result!)
+                if(result != nil){
+                    if(json["content"] != "fail"){
+                        self.search_result.removeAll()
+                        for item in json["content"].array! {
+                            var temp = [String:String]()
+                            temp["name"] = item["name"].string!
+                            temp["id"] = item["id"].string!
+                            if(item["address"] == JSON.null){
+                                temp["address"] = "no address for this hotel"
+                            }
+                            else{
+                                temp["address"] = item["address"].string!
+                            }
+                            self.search_result.append(temp)
+                        }
+                        self.cityTableView.reloadData()
+                    }
+                }
+        }
         
         // TODO: Delete it after server is on
-        for _ in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18] {
-            var temp = [String:String]()
-            temp["name"] = "Marriott"
-            temp["id"] = "1"
-            temp["address"] = "2301 Vanderbilt Place, PMB 357133"
-            self.search_result.append(temp)
-        }
+//        for _ in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18] {
+//            var temp = [String:String]()
+//            temp["name"] = "Marriott"
+//            temp["id"] = "1"
+//            temp["address"] = "2301 Vanderbilt Place, PMB 357133"
+//            self.search_result.append(temp)
+//        }
         self.cityTableView.reloadData()
     }
 

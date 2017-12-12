@@ -25,7 +25,7 @@ class InitialViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         
         picker.dataSource = self
         picker.delegate = self
-        pickerData = ["Nashville", "Los Angeles", "New York", "San Francisco", "Boston"]
+        pickerData = ["Nashville", "Chicago", "New York", "Washington DC"]
         selectedCity = pickerData[2]
         picker.selectRow(2, inComponent: 0, animated: true)
         
